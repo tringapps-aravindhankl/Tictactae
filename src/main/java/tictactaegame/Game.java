@@ -21,7 +21,7 @@ class Tictactae
 			}
 		}
 	}
-	void PrintBoard()
+	void printboard()
 	{
 		L.println("-------");
 		for(int i=0;i<board.length;i++)
@@ -111,7 +111,7 @@ public class Game
     char mark;
     char mark1;
     int t=0;
-    tic.PrintBoard();
+    tic.printboard();
     tic.l.println("Enter Player1");
     String name=scan.nextLine();
     tic.l.println("Choose X  OR O");
@@ -133,7 +133,7 @@ public class Game
     while(t<9) {
     Tictactae.l.println(cp.name + "Turn");
     cp.makeMove();
-    tic.PrintBoard();
+    tic.printboard();
     if(Tictactae.checkRow() || Tictactae.checkcol() || Tictactae.checkDiag() )
     {
     	Tictactae.l.println(cp.name +"Win");
