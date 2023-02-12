@@ -23,10 +23,10 @@ class Tictactae
 	}
 	void printboard()
 	{
-		L.println("-------");
+		l.println("-------");
 		for(int i=0;i<board.length;i++)
 		{
-			L.print("|");
+			l.print("|");
 			for(int j=0;j<board.length;j++)
 			{
 				l.print(board[i][j]+ "|");
@@ -82,7 +82,7 @@ class HumanPlayer
 	int col;
 	do
 	{
-		System.out.println("enter row and col:");
+		Tictactae.l.println("enter row and col:");
 		row=scan.nextInt();
 		col=scan.nextInt();
 	}while(!validMove(row,col));
