@@ -3,7 +3,6 @@ import java.io.PrintStream;
 import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.util.*;
-import java.util.logging.Logger;
 class Tictactae
 {
 	static char[][]board;
@@ -109,16 +108,17 @@ public class Game
     Tictactae tic=new Tictactae();
     Scanner scan=new Scanner(System.in);
     Scanner scan1=new Scanner(System.in);
-    char mark,mark1;
+    char mark;
+    char mark1;
     int t=0;
     tic.PrintBoard();
-    System.out.println("Enter Player1");
+    tic.L.println("Enter Player1");
     String name=scan.nextLine();
-    System.out.println("Choose X  OR O");
+    tic.L.println("Choose X  OR O");
     mark=scan.next().charAt(0);
     HumanPlayer player1=new HumanPlayer(name,mark);
     
-    System.out.println("Enter Player1");
+    tic.L.println("Enter Player1");
     String name1=scan1.nextLine();
     if(mark=='X') {
     mark1='O';
