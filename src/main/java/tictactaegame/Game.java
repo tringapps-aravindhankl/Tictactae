@@ -6,7 +6,7 @@ import java.util.*;
 class Tictactae
 {
 	static char[][]board;
-	static PrintStream L=new PrintStream((new FileOutputStream(FileDescriptor.out)));
+	static PrintStream l=new PrintStream((new FileOutputStream(FileDescriptor.out)));
 	Tictactae(){
 		board=new char[3][3];
 		initBoard();
@@ -29,10 +29,10 @@ class Tictactae
 			L.print("|");
 			for(int j=0;j<board.length;j++)
 			{
-				L.print(board[i][j]+ "|");
+				l.print(board[i][j]+ "|");
 			}
-			L.println();
-			L.println("-------");
+			l.println();
+			l.println("-------");
 		}
 	}
 	static void placeMark(int row,int col,char mark) {
@@ -97,7 +97,7 @@ class HumanPlayer
 			return true;
 			}
 		}
-		Tictactae.L.println("Invalid");
+		Tictactae.l.println("Invalid");
 		return false;
 	}
 }
@@ -112,13 +112,13 @@ public class Game
     char mark1;
     int t=0;
     tic.PrintBoard();
-    tic.L.println("Enter Player1");
+    tic.l.println("Enter Player1");
     String name=scan.nextLine();
-    tic.L.println("Choose X  OR O");
+    tic.l.println("Choose X  OR O");
     mark=scan.next().charAt(0);
     HumanPlayer player1=new HumanPlayer(name,mark);
     
-    tic.L.println("Enter Player1");
+    tic.l.println("Enter Player1");
     String name1=scan1.nextLine();
     if(mark=='X') {
     mark1='O';
@@ -131,12 +131,12 @@ public class Game
     cp = player1;
     
     while(t<9) {
-    Tictactae.L.println(cp.name + "Turn");
+    Tictactae.l.println(cp.name + "Turn");
     cp.makeMove();
     tic.PrintBoard();
     if(Tictactae.checkRow() || Tictactae.checkcol() || Tictactae.checkDiag() )
     {
-    	Tictactae.L.println(cp.name +"Win");
+    	Tictactae.l.println(cp.name +"Win");
     	t++;
     	break;
     }
@@ -153,7 +153,7 @@ public class Game
     }
     }
     if(t==0) {
-    	Tictactae.L.println(cp.name +"Die");
+    	Tictactae.l.println(cp.name +"Die");
     }
     }
     
