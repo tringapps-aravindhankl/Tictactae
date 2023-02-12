@@ -97,7 +97,6 @@ class HumanPlayer
 			return true;
 			}
 		}
-		Tictactae.l.println("Invalid");
 		return false;
 	}
 }
