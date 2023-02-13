@@ -95,8 +95,14 @@ class HumanPlayer
 			{
 			return true;
 			}
+			else
+			{
+			return false;
+			}
 		}
+		else{
 		return false;
+		}
 	}
 }
 public class Game 
