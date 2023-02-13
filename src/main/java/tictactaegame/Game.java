@@ -110,13 +110,13 @@ public class Game
     char mark1;
     int t=0;
     tic.printboard();
-    tic.l.println("Enter Player1");
+    Tictactae.l.println("Enter Player1");
     String name=scan.nextLine();
-    tic.l.println("Choose X  OR O");
+    Tictactae.l.println("Choose X  OR O");
     mark=scan.next().charAt(0);
     HumanPlayer player1=new HumanPlayer(name,mark);
     
-    tic.l.println("Enter Player1");
+    Tictactae.l.println("Enter Player1");
     String name1=scan1.nextLine();
     if(mark=='X') {
     mark1='O';
