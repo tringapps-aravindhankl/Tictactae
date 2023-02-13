@@ -10,7 +10,7 @@ class Tictactae
 	Tictactae(){
 		initBoard();
 	}
-	void initBoard()
+	static void initBoard()
 	{
 		for(int i=0;i<board.length;i++)
 		{
