@@ -86,9 +86,8 @@ class HumanPlayer
 	}
 	boolean validMove(int row,int col)
 	{
-		if(row>=0 && row<=2 && col>=0 && col<=2 && Tictactae.board[row][col]==' ')
-			return true;
-		return false;
+		return row>=0 && row<=2 && col>=0 && col<=2 && Tictactae.board[row][col]==' ';
+		
 	}
 }
 public class Game 
