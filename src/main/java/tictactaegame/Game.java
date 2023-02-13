@@ -59,13 +59,10 @@ class Tictactae
 	}
 	static boolean checkDiag() {
 		if(board [0][0]!=' ' && board[0][0] ==  board[1][1] && board[1][1] ==  board[2][2] && board[0][0] == board[2][2])
-		{
 			return true;
-		}
+		
 		else if(board[0][2]!=' ' && board[0][2] == board[1][1] && board[1][1]==board[2][0])
-		{
-		return true;
-		}
+			return true;
 		return false;
 	}
 }
@@ -94,9 +91,7 @@ class HumanPlayer
 	boolean validMove(int row,int col)
 	{
 		if(row>=0 && row<=2 && col>=0 && col<=2 && Tictactae.board[row][col]==' ')
-		{
 			return true;
-		}
 		return false;
 	}
 }
