@@ -62,9 +62,7 @@ class Tictactae
 		{
 			return true;
 		}
-		else{
 		return false;
-		}
 	}
 }
 class HumanPlayer 
