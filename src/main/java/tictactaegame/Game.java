@@ -107,7 +107,7 @@ public class Game
     mark=scan.next().charAt(0);
     HumanPlayer player1=new HumanPlayer(name,mark);
     
-    Tictactae.l.println("Enter Player1");
+    Tictactae.l.println("Enter Player2");
     String name1=scan1.nextLine();
     if(mark=='X') {
     mark1='O';
