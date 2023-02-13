@@ -53,7 +53,7 @@ class Tictactae
 			if(board[0][j]!=' ' && board[0][j] == board[1][j] && board[1][j] == board[2][j])
 			{
 				return true;
-		    }
+		        }
 		}
 		return false;
 	}
@@ -62,7 +62,9 @@ class Tictactae
 		{
 			return true;
 		}
+		else{
 		return false;
+		}
 	}
 }
 class HumanPlayer 
