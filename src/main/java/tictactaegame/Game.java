@@ -100,6 +100,7 @@ public class Game
     char mark;
     char mark1;
     int t=0;
+    int count=0;
     tic.printboard();
     Tictactae.l.println("Enter Player1");
     String name=scan.nextLine();
@@ -119,7 +120,7 @@ public class Game
     HumanPlayer cp;
     cp = player1;
     
-    while(t<9) {
+    while(count<9) {
     Tictactae.l.println(cp.name + "Turn");
     cp.makeMove();
     tic.printboard();
@@ -131,6 +132,7 @@ public class Game
     }
     else
     {
+	count++;
     	if(cp==player1)
     	{
     		cp=player2;
@@ -142,7 +144,7 @@ public class Game
     }
     }
     if(t==0) {
-    	Tictactae.l.println(cp.name +"Die");
+    	Tictactae.l.println("Match is Draw");
     }
     }
     
