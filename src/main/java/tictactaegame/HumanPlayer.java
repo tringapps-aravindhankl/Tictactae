@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 class HumanPlayer 
 {
-	static PrintStream L=new PrintStream((new FileOutputStream(FileDescriptor.out)));
+	static PrintStream l=new PrintStream((new FileOutputStream(FileDescriptor.out)));
 	String name;
 	char mark;
 	HumanPlayer(String name,char mark){
@@ -22,7 +22,7 @@ class HumanPlayer
 	int col;
 	do
 	{
-		System.out.println("enter row and col:");
+		l.println("enter row and col:");
 		row=scan.nextInt();
 		col=scan.nextInt();
 	}while(!validMove(row,col));
@@ -42,7 +42,7 @@ class HumanPlayer
 			}
 		}
 		else {
-		Tictactae.L.println("Invalid");
+		Tictactae.l.println("Invalid");
 		return false;
 		}
 	}
