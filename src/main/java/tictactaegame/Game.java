@@ -1,5 +1,4 @@
 package tictactaegame;
-
 import java.util.*;
 public class Game 
 {
