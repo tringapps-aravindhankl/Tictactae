@@ -37,9 +37,7 @@ class HumanPlayer
 			{
 			return true;
 			}
-			else {
 			return false;
-			}
 		}
 		else {
 		Tictactae.l.println("Invalid");
