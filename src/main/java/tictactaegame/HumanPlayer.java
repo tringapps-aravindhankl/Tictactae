@@ -37,11 +37,10 @@ class HumanPlayer
 			{
 			return true;
 			}
-			return false;
 		}
 		else {
 		Tictactae.l.println("Invalid");
-		return false;
 		}
+		return false;
 	}
 }
