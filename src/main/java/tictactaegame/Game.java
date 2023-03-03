@@ -4,14 +4,13 @@ public class Game
 {
     public static void main( String[] args )
     {
-    Tictactae tic=new Tictactae();
     Scanner scan=new Scanner(System.in);
     Scanner scan1=new Scanner(System.in);
     char mark;
     char mark1;
     int t=0;
     int count=0;
-    Tictactae.printboard();
+    tic.printboard();
     Tictactae.l.println("Enter Player1");
     String name=scan.nextLine();
     Tictactae.l.println("Choose X  OR O");
@@ -33,7 +32,7 @@ public class Game
     while(count<9) {
     Tictactae.l.println(cp.name + "Turn");
     cp.makeMove();
-    Tictactae.printboard();
+    tic.printboard();
     if(Tictactae.checkRow() || Tictactae.checkcol() || Tictactae.checkDiag() )
     {
     	Tictactae.l.println(cp.name +"Win");
