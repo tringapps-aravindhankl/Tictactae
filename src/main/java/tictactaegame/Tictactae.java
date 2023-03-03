@@ -6,13 +6,12 @@ import java.io.PrintStream;
 
 class Tictactae
 {
-	static char[][]board;
-	static PrintStream L=new PrintStream((new FileOutputStream(FileDescriptor.out)));
+	static char[][]board=new char[3][3];
+	static PrintStream l=new PrintStream((new FileOutputStream(FileDescriptor.out)));
 	Tictactae(){
-		board=new char[3][3];
 		initBoard();
 	}
-	void initBoard()
+	static void initBoard()
 	{
 		for(int i=0;i<board.length;i++)
 		{
@@ -22,18 +21,18 @@ class Tictactae
 			}
 		}
 	}
-	void PrintBoard()
+	static void printboard()
 	{
-		L.println("-------");
+		l.println("-------");
 		for(int i=0;i<board.length;i++)
 		{
-			L.print("|");
+			l.print("|");
 			for(int j=0;j<board.length;j++)
 			{
-				L.print(board[i][j]+ "|");
+				l.print(board[i][j]+ "|");
 			}
-			L.println();
-			L.println("-------");
+			l.println();
+			l.println("-------");
 		}
 	}
 	static void placeMark(int row,int col,char mark) {
@@ -64,4 +63,3 @@ class Tictactae
 	
 	}
 }
-
