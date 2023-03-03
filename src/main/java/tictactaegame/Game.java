@@ -11,7 +11,7 @@ public class Game
     char mark1;
     int t=0;
     int count=0;
-    tic.printboard();
+    Tictactae.printboard();
     Tictactae.l.println("Enter Player1");
     String name=scan.nextLine();
     Tictactae.l.println("Choose X  OR O");
@@ -33,7 +33,7 @@ public class Game
     while(count<9) {
     Tictactae.l.println(cp.name + "Turn");
     cp.makeMove();
-    tic.printboard();
+    Tictactae.printboard();
     if(Tictactae.checkRow() || Tictactae.checkcol() || Tictactae.checkDiag() )
     {
     	Tictactae.l.println(cp.name +"Win");
